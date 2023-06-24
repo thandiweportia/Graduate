@@ -18,7 +18,8 @@
         app:layout_constraintBottom_toTopOf="@+id/welcomeText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/welcomeText"
@@ -31,7 +32,8 @@
         app:layout_constraintBottom_toTopOf="@+id/imageWeb"
         app:layout_constraintEnd_toEndOf="@+id/greetingText"
         app:layout_constraintStart_toStartOf="@+id/greetingText"
-        app:layout_constraintTop_toBottomOf="@+id/greetingText" />
+        app:layout_constraintTop_toBottomOf="@+id/greetingText"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/additionalText"
@@ -45,7 +47,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageCourse1"
         app:layout_constraintEnd_toEndOf="@+id/imageMobile"
-        app:layout_constraintTop_toBottomOf="@+id/imageWeb" />
+        app:layout_constraintTop_toBottomOf="@+id/imageWeb"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/suggestedText"
@@ -61,7 +64,8 @@
         app:layout_constraintBottom_toTopOf="@+id/imageCourse3"
         app:layout_constraintEnd_toEndOf="@+id/imageCourse2"
         app:layout_constraintStart_toStartOf="@+id/imageCourse1"
-        app:layout_constraintTop_toBottomOf="@+id/imageCourse1" />
+        app:layout_constraintTop_toBottomOf="@+id/imageCourse1"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageWeb"
@@ -71,7 +75,8 @@
         app:layout_constraintEnd_toStartOf="@+id/imageMobile"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeText"
-        app:srcCompat="@mipmap/ic_frame_foreground" />
+        app:srcCompat="@mipmap/ic_frame_foreground"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageMobile"
@@ -82,7 +87,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageWeb"
         app:layout_constraintTop_toTopOf="@+id/imageWeb"
-        app:srcCompat="@mipmap/ic_frame2_foreground" />
+        app:srcCompat="@mipmap/ic_frame2_foreground"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageCourse1"
@@ -93,7 +99,8 @@
         app:layout_constraintEnd_toStartOf="@+id/imageCourse2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/additionalText"
-        app:srcCompat="@mipmap/ic_frame3_foreground" />
+        app:srcCompat="@mipmap/ic_frame3_foreground"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageCourse2"
@@ -104,7 +111,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageCourse1"
         app:layout_constraintTop_toTopOf="@+id/imageCourse1"
-        app:srcCompat="@mipmap/ic_frame4_foreground" />
+        app:srcCompat="@mipmap/ic_frame4_foreground"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageNav"
@@ -116,7 +124,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageCourse3"
-        app:srcCompat="@drawable/ic_bottomnav" />
+        app:srcCompat="@drawable/ic_bottomnav"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageCourse3"
@@ -128,7 +137,8 @@
         app:layout_constraintEnd_toStartOf="@+id/imageCourse4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/suggestedText"
-        app:srcCompat="@mipmap/ic_frame5_foreground" />
+        app:srcCompat="@mipmap/ic_frame5_foreground"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageCourse4"
@@ -141,6 +151,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageCourse3"
         app:layout_constraintTop_toTopOf="@+id/imageCourse3"
-        app:srcCompat="@mipmap/ic_frame6_foreground" />
+        app:srcCompat="@mipmap/ic_frame6_foreground"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
