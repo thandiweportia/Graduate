@@ -4,84 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
         android:id="@+id/join"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Join Today"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.41" />
+        app:layout_constraintVertical_bias="0.38" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher_foreground"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="85dp" />
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintEnd_toStartOf="@+id/programme"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
 
     <TextView
         android:id="@+id/graduate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text="Graduate"
         android:textColor="@color/blue"
         android:textSize="19sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="107dp" />
+        app:layout_constraintBottom_toTopOf="@+id/programme"
+        app:layout_constraintStart_toStartOf="@+id/programme" />
 
     <TextView
         android:id="@+id/programme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="24dp"
         android:text="Programme"
         android:textColor="@color/blue"
-        android:textStyle="bold"
         android:textSize="19sp"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="143dp" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/signInBtn"
-        android:layout_width="310dp"
-        android:layout_height="48dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="31dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_google"
         android:text="Sign In with Google"
         android:textAllCaps="false"
-        android:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="341dp" />
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/superhero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/amico"
+        app:layout_constraintTop_toBottomOf="@+id/join" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ellipse"
         android:layout_width="404dp"
         android:layout_height="164dp"
+        android:layout_marginTop="165dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_ellipse"
-        tools:layout_editor_absoluteY="571dp" />
+        app:layout_constraintTop_toTopOf="@+id/superhero"
+        app:srcCompat="@drawable/ic_ellipse" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/amico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_amico"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="364dp" />
+        android:layout_marginTop="49dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signInBtn"
+        app:srcCompat="@drawable/ic_amico" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/superhero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_superhero"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="406dp" />
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/signInBtn"
+        app:srcCompat="@drawable/ic_superhero" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
