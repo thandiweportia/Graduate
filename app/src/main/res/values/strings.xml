@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">gradApp</string>
+    <string name="email">  Email*</string>
+    <string name="name">  Name*</string>
+    <string name="join">Join Today</string>
+
 </resources>

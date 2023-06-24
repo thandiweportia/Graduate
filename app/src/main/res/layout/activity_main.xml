@@ -68,6 +68,7 @@
         android:drawableLeft="@drawable/ic_google"
         android:text="Sign In with Google"
         android:textAllCaps="false"
+        android:radius="40dp"
         android:textColor="@color/grey"
         android:textSize="20sp"
         android:textStyle="bold"
