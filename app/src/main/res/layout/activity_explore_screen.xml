@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exploreScreen">
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="151dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="46dp"
+        android:text="Hi, student"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/welcomeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:text="Welcome"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageWeb"
+        app:layout_constraintEnd_toEndOf="@+id/greetingText"
+        app:layout_constraintStart_toStartOf="@+id/greetingText"
+        app:layout_constraintTop_toBottomOf="@+id/greetingText" />
+
+    <TextView
+        android:id="@+id/additionalText"
+        android:layout_width="267dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Additional Courses"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageCourse1"
+        app:layout_constraintEnd_toEndOf="@+id/imageMobile"
+        app:layout_constraintTop_toBottomOf="@+id/imageWeb" />
+
+    <TextView
+        android:id="@+id/suggestedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="6dp"
+        android:text="Suggested Courses"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageCourse3"
+        app:layout_constraintEnd_toEndOf="@+id/imageCourse2"
+        app:layout_constraintStart_toStartOf="@+id/imageCourse1"
+        app:layout_constraintTop_toBottomOf="@+id/imageCourse1" />
+
+    <ImageView
+        android:id="@+id/imageWeb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/additionalText"
+        app:layout_constraintEnd_toStartOf="@+id/imageMobile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        app:srcCompat="@mipmap/ic_frame_foreground" />
+
+    <ImageView
+        android:id="@+id/imageMobile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageWeb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageWeb"
+        app:layout_constraintTop_toTopOf="@+id/imageWeb"
+        app:srcCompat="@mipmap/ic_frame2_foreground" />
+
+    <ImageView
+        android:id="@+id/imageCourse1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/suggestedText"
+        app:layout_constraintEnd_toStartOf="@+id/imageCourse2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/additionalText"
+        app:srcCompat="@mipmap/ic_frame3_foreground" />
+
+    <ImageView
+        android:id="@+id/imageCourse2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/suggestedText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageCourse1"
+        app:layout_constraintTop_toTopOf="@+id/imageCourse1"
+        app:srcCompat="@mipmap/ic_frame4_foreground" />
+
+    <ImageView
+        android:id="@+id/imageNav"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCourse3"
+        app:srcCompat="@drawable/ic_bottomnav" />
+
+    <ImageView
+        android:id="@+id/imageCourse3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageNav"
+        app:layout_constraintEnd_toStartOf="@+id/imageCourse4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suggestedText"
+        app:srcCompat="@mipmap/ic_frame5_foreground" />
+
+    <ImageView
+        android:id="@+id/imageCourse4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCourse3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageCourse3"
+        app:layout_constraintTop_toTopOf="@+id/imageCourse3"
+        app:srcCompat="@mipmap/ic_frame6_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
