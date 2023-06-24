@@ -13,13 +13,14 @@
         android:layout_height="wrap_content"
         android:text="Join Today"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.38"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/logo"
@@ -29,7 +30,8 @@
         android:layout_marginEnd="13dp"
         app:layout_constraintEnd_toStartOf="@+id/programme"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/graduate"
@@ -41,7 +43,8 @@
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/programme"
-        app:layout_constraintStart_toStartOf="@+id/programme" />
+        app:layout_constraintStart_toStartOf="@+id/programme"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/programme"
@@ -54,7 +57,8 @@
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/logo"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/signInBtn"
@@ -64,18 +68,19 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="31dp"
         android:layout_marginBottom="31dp"
-        android:backgroundTint="@color/white"
+        app:backgroundTint="@color/white"
         android:drawableLeft="@drawable/ic_google"
         android:text="Sign In with Google"
-        android:textAllCaps="false"
-        android:radius="40dp"
+        app:textAllCaps="false"
+        app:circularflow_defaultRadius="40dp"
         android:textColor="@color/grey"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/superhero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/amico"
-        app:layout_constraintTop_toBottomOf="@+id/join" />
+        app:layout_constraintTop_toBottomOf="@+id/join"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <ImageView
         android:id="@+id/ellipse"
@@ -86,7 +91,8 @@
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/superhero"
-        app:srcCompat="@drawable/ic_ellipse" />
+        app:srcCompat="@drawable/ic_ellipse"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/amico"
@@ -96,7 +102,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/signInBtn"
-        app:srcCompat="@drawable/ic_amico" />
+        app:srcCompat="@drawable/ic_amico"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/superhero"
@@ -106,6 +113,7 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/signInBtn"
-        app:srcCompat="@drawable/ic_superhero" />
+        app:srcCompat="@drawable/ic_superhero"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
