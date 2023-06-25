@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightBlue"
-    tools:context=".Complete">
+    tools:context="Complete">
 
     <EditText
         android:id="@+id/emailEdit"
@@ -17,13 +17,12 @@
         android:background="@drawable/custom_edittext"
         app:backgroundTint="@color/white"
         android:hint="  Email*"
-        android:inputType="textEmail"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/numberEdit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameEdit"
-        tools:ignore="Autofill,HardcodedText" />
+        tools:ignore="Autofill,HardcodedText,TextFields" />
 
     <EditText
         android:id="@+id/numberEdit"
