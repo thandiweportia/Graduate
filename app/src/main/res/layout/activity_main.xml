@@ -71,6 +71,7 @@
         app:backgroundTint="@color/white"
         android:drawableLeft="@drawable/ic_google"
         android:text="Sign In with Google"
+        android:background="@drawable/custom_edittext"
         app:textAllCaps="false"
         app:circularflow_defaultRadius="40dp"
         android:textColor="@color/grey"
